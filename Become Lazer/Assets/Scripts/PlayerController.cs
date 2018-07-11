@@ -33,6 +33,12 @@ public class PlayerController : MonoBehaviour {
 				RG2D.AddForce (-MovingForce, ForceMode2D.Force);
 				LeftOrRight = true;
 			}
+				
+
+			/*for(float i = 5f; i <= 0f; i --){
+				Debug.Log ("Should be slowing down");
+				Time.timeScale = 0.25f;
+			}*/
 
 
 		}
@@ -44,7 +50,9 @@ public class PlayerController : MonoBehaviour {
 
 		if (PlayerTransform.position.x == -2.8f || PlayerTransform.position.x == 2.8f) {
 			RG2D.velocity = Vector2.zero;
-		}
+		
 
 	}
 }
+}
+
