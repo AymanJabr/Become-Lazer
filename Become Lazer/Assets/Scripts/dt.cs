@@ -13,9 +13,8 @@ public class dt : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (cout == 0 ) Scale = transform.localScale;
+         Scale = transform.localScale;
         
-        if (cout == TailDensity) cout = 0;
 
         if (Scale.y > 0)
         {
