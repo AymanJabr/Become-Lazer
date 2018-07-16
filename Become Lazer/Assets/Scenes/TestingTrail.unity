@@ -214,6 +214,11 @@ MonoBehaviour:
   speed: 5
   Ywall: 0
   wall: {fileID: 988262027}
+--- !u!4 &632566913 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4286638136955372, guid: ab5b27b42a1b43d47a36149999606f2f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1278422775}
 --- !u!114 &688583398 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114375249804778538, guid: ab5b27b42a1b43d47a36149999606f2f,
@@ -725,9 +730,61 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23426659217439226, guid: ab5b27b42a1b43d47a36149999606f2f,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366874503320282, guid: ab5b27b42a1b43d47a36149999606f2f, type: 2}
+      propertyPath: m_Name
+      value: Pointer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab5b27b42a1b43d47a36149999606f2f, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1492339387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1492339388}
+  - component: {fileID: 1492339389}
+  m_Layer: 0
+  m_Name: animation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1492339388
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1492339387}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 0.3937971, y: 15.130041, z: 3.7448475}
+  m_Children: []
+  m_Father: {fileID: 632566913}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1492339389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1492339387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2486e348f84a14d46b79a4712b885c42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lpoint: {fileID: 1779480843516530, guid: e5e046a05ce46954ea0cf98981495d45, type: 2}
+  Rpoint: {fileID: 1779480843516530, guid: 9a4cb238951706044bc5928bef67bcef, type: 2}
+  ins: 1
 --- !u!1 &1833466622
 GameObject:
   m_ObjectHideFlags: 0
