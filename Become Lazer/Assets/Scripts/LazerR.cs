@@ -10,8 +10,6 @@ public class LazerR : MonoBehaviour
     void Start()
     {
         cam = GameObject.Find("MainCamera"); // cam = MainCamera Object
-
-		//StartCoroutine (KillLaser());
     }
 
     // Update is called once per frame
@@ -31,16 +29,10 @@ public class LazerR : MonoBehaviour
             GameObject.Find("Pointer").transform.position = new Vector2(-2.8f, transform.position.y);//find the shooter and move it to the location of the collision
             var CamSc = cam.GetComponent("cam") as cam;
             CamSc.high = transform.position.y;
-			Destroy (gameObject);
+
         }
 
 
 
     }
-
-	/*IEnumerator KillLaser(){
-		Debug.Log("Killing in progress");
-		yield return new WaitForSeconds (1.5f);
-		Destroy (gameObject);
-	}*/
 }

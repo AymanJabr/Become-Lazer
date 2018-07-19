@@ -33,11 +33,6 @@ public class cam : MonoBehaviour {
             Instantiate(wall, new Vector3(transform.position.x, Ywall , 0.5f ), transform.rotation);
         }
 
-		if (transform.position.y < Ywall)
-		{
-			Ywall -= 9.937f;
-			Instantiate(wall, new Vector3(transform.position.x, Ywall , 0.5f ), transform.rotation);
-		}
 
 
     }

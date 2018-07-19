@@ -30,6 +30,6 @@ public class Point : MonoBehaviour {
 	    
         alpha -= 0.01f;
           GetComponent <SpriteRenderer>().color = new Color(1,1,1, alpha); // CHANGE ALPHA 
-		if (alpha < 0) Destroy(gameObject);
+        if (alpha < 0) gameObject.SetActive(false);
     }
 }

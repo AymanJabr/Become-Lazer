@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Wall : MonoBehaviour {
 
-	//public GameObject Player;
-	//public Rigidbody2D PlayerRigidBody;
+	public GameObject Player;
+	public Rigidbody2D PlayerRigidBody;
 
 	// Use this for initialization
 	void Start () {
-		//Player = GameObject.FindGameObjectWithTag ("Player");
-		//PlayerRigidBody = Player.GetComponent<Rigidbody2D> ();
+		Player = GameObject.FindGameObjectWithTag ("Player");
+		PlayerRigidBody = Player.GetComponent<Rigidbody2D> ();
 		
 	}
 	

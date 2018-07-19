@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class dt : MonoBehaviour {
     Vector2 Scale;
-    //int cout=0;
-    //int TailDensity = 5;
+    int cout=0;
+    int TailDensity = 5;
     // Use this for initialization
     void Start () {
 		
@@ -16,10 +16,11 @@ public class dt : MonoBehaviour {
          Scale = transform.localScale;
         
 
-		if (Scale.y > 0) {
-			Scale.y -= 0.1f * Time.deltaTime;
-			transform.localScale = Scale;
-		} else
-			Destroy (gameObject);
+        if (Scale.y > 0)
+        {
+            Scale.y -= 0.1f * Time.deltaTime;
+            transform.localScale = Scale;
+        }
+        else gameObject.SetActive(false);
     }
 }
