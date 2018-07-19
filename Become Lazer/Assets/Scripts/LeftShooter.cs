@@ -49,10 +49,12 @@ public class LeftShooter : MonoBehaviour {
                 deg = pi / 2;
         }
         else
-            deg = Mathf.Atan(y / x);
+			deg =  Mathf.Atan(y / x);
+	
+		deg = Mathf.Rad2Deg * deg;
 
-        print(new Vector2(x, y));
-        transform.rotation = Quaternion.EulerRotation(0f, 0f, deg);
+        //print(new Vector2(x, y));
+		transform.rotation = Quaternion.Euler(0f, 0f, deg);
     }
 
     public void ChangeAngleR()
@@ -68,10 +70,14 @@ public class LeftShooter : MonoBehaviour {
         }
         else
             deg = Mathf.Atan(y / x);
+		
+		deg = Mathf.Rad2Deg * deg;
 
-        print(new Vector2(x, y));
-        transform.rotation = Quaternion.EulerRotation(0f, 0f, deg);
+        //print(new Vector2(x, y));
+        transform.rotation = Quaternion.Euler(0f, 0f, deg);
     }
+
+
 
 
 

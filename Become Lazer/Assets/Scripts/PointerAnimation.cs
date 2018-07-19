@@ -18,6 +18,9 @@ public class PointerAnimation : MonoBehaviour {
             Instantiate(Rpoint, transform.position, transform.rotation);
 
             ins = false;
+
+			//Destroy (Lpoint);
+			//Destroy (Rpoint);
         }
 
 
