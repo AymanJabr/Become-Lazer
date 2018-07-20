@@ -109,3 +109,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dt: {fileID: 1341244236604214, guid: 3e3e4749a1532f542bab14db07831c24, type: 2}
+  cam: {fileID: 0}

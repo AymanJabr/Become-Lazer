@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class cam : MonoBehaviour {
-    public float high,speed,Ywall;
+    public float high,speed,Ywallup,Ywalldown;
      
     public GameObject wall;
 	// Use this for initialization
 	void Start () {
         high = transform.position.y;
-        Ywall = wall.transform.position.y;
+        Ywallup   = wall.transform.position.y;
+		Ywalldown = wall.transform.position.y;
 
     }
 	
@@ -27,12 +28,17 @@ public class cam : MonoBehaviour {
 
         }
 
-        if (transform.position.y > Ywall)
+        if (transform.position.y > Ywallup)
         {
-            Ywall += 9.937f;
-            Instantiate(wall, new Vector3(transform.position.x, Ywall , 0.5f ), transform.rotation);
+            Ywallup += 9.937f;
+            Instantiate(wall, new Vector3(transform.position.x, Ywallup , 0.5f ), transform.rotation);
         }
 
+		if (transform.position.y < Ywalldown)
+		{
+			Ywalldown -= 9.937f;
+			Instantiate(wall, new Vector3(transform.position.x, Ywalldown , 0.5f ), transform.rotation);
+		}
 
 
     }

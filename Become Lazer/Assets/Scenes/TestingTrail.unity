@@ -212,7 +212,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   high: 0
   speed: 5
-  Ywall: 0
+  Ywallup: 0
+  Ywalldown: 0
   wall: {fileID: 988262027}
 --- !u!4 &632566913 stripped
 Transform:
@@ -941,6 +942,12 @@ Prefab:
       propertyPath: m_Name
       value: Pointer
       objectReference: {fileID: 0}
+    - target: {fileID: 114375249804778538, guid: ab5b27b42a1b43d47a36149999606f2f,
+        type: 2}
+      propertyPath: lazerL
+      value: 
+      objectReference: {fileID: 1288663525561152, guid: e7b2ee4c55bd59d43b7c71c12a598e77,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab5b27b42a1b43d47a36149999606f2f, type: 2}
   m_IsPrefabParent: 0

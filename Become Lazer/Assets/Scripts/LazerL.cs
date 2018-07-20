@@ -23,7 +23,7 @@ public class LazerL : MonoBehaviour {
 
         if ((transform.position.x > 2.82f)) //when the lazer hits the walls
         {
-            gameObject.SetActive(false);
+			Destroy (gameObject);
             GameObject.Find("Pointer").transform.position = new Vector2(2.8f, transform.position.y); ;//find the shooter and move it to the location of the collision            
             var CamSc = cam.GetComponent("cam") as cam;
             CamSc.high = transform.position.y;
